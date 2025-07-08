@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets | Maslaw</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+
+    <script>
+       if ('serviceWorker' in navigator) {
+         navigator.serviceWorker.register('/sw.js', { 
+           scope: '/'  // Gère toutes les pages du site
+         });
+       }
+    </script>
+</head>
+<body>
+    <!-- Header et navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><img src="icons/icon-m.png" style="width: 30px;">  Mas<span>law</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="projets.html" style="color: #4cc9f0;">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"><img src="icons/icon-menu.png"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<!-- Section projets --> 
+<section id="projets" class="section"> 
+    <div class="container"> 
+        <div class="section-title"> 
+            <h2>Mes projets</h2> 
+        </div> 
+        <div class="projects-container"> 
+            <div class="project-card"> 
+                <div class="project-image"> 
+                    <img src="icons/image/img-cuisine.jpeg" alt="Projet 1"> 
+                </div> 
+                <div class="project-content"> 
+                    <h3>Application de cuisine</h3> 
+                    <p>Une application android qui aide les cuisiniers à organiser leurs recettes et à découvrir des nouveaux plats.</p> 
+                    <div class="project-tags"> 
+                        <span class="project-tag"> XML </span> 
+                        <span class="project-tag">Java</span> 
+                        <span class="project-tag">SQLite</span> 
+                    </div> 
+                    <div class="project-links"> 
+                        <a href="#" class="project-link"> <i class="fas fa-link"><img src="icons/icon-lien.png"> </i> Démo </a> 
+                        <a href="#" class="project-link"> <i class="fab fa-github"><img src="icons/icon-github.png"> </i> Code source </a> 
+                    </div>  
+                </div> 
+            </div> 
+            <div class="project-card"> 
+                <div class="project-image"> 
+                    <img src="icons/image/img-voyage.jpg" alt="Projet 2"> 
+                </div> 
+                <div class="project-content"> 
+                    <h3>Plateforme d'une agence de voyage</h3> 
+                    <p>Un système qui permet aux clients de reserver une ou plusieurs places sur un bus voyageant n'importe où au Cameroun.</p> 
+                    <div class="project-tags"> 
+                        <span class="project-tag">Html/Css</span> 
+                        <span class="project-tag">PHP</span> 
+                        <span class="project-tag">MySQL</span> 
+                    </div> 
+                    <div class="project-links"> 
+                        <a href="#" class="project-link"> <i class="fas fa-link"><img src="icons/icon-lien.png"> </i> Démo </a> 
+                        <a href="#" class="project-link"> <i class="fab fa-github"><img src="icons/icon-github.png"> </i> Code source </a> 
+                    </div> 
+                </div> 
+            </div> 
+            <div class="project-card"> 
+                <div class="project-image"> 
+                    <img src="icons/image/img-etude.jpeg" alt="Projet 3"> 
+                </div> 
+                <div class="project-content"> 
+                    <h3>Visualisateur d'algorithmes</h3> 
+                    <p>Un outil interactif pour visualiser et comprendre le fonctionnement des algorithmes de tri et de recherche.</p> 
+                    <div class="project-tags"> 
+                        <span class="project-tag">JavaScript</span> 
+                        <span class="project-tag">HTML5 Canvas</span> 
+                        <span class="project-tag">CSS3</span> 
+                    </div> 
+                    <div class="project-links"> 
+                        <a href="#" class="project-link"> <i class="fas fa-link"><img src="icons/icon-lien.png"> </i> Démo </a> 
+                        <a href="#" class="project-link"> <i class="fab fa-github"><img src="icons/icon-github.png"> </i> Code source </a>
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </div> 
+</section> 
+
+
+    <!-- Footer --> 
+    <footer> 
+        <div class="container"> 
+            <div class="social-links"> 
+                <a href="https://www.facebook.com" class="social-link"><i class="social-icon"><img src="icons/icon-facebook.png"></i></a> 
+                <a href="https://www.linkedin.org" class="social-link"><i class="social-icon"><img src="icons/icon-linkedin.png"></i></a> 
+                <a href="https://www.twitter.com" class="social-link"><i class="social-icon"><img src="icons/icon-twitter.png"></i></a> 
+                <a href="https://www.telegramme.org" class="social-link"><i class="social-icon"><img src="icons/icon-telegram.png"></i></a> 
+            </div> 
+            <p class="footer-text">&copy; 2025 Maslaw Garag Ibrahim. Tous droits réservés.</p> 
+        </div> 
+    </footer> 
+    <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>

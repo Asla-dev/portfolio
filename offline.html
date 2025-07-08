@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hors Ligne</title>
+<link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+
+    <script>
+       if ('serviceWorker' in navigator) {
+         navigator.serviceWorker.register('/sw.js', { 
+           scope: '/'  // Gère toutes les pages du site
+         });
+       }
+    </script>
+</head>
+<body>
+    <h1>Vous êtes hors ligne</h1>
+    <p>Contenu disponible sans connexion</p>
+</body>
+</html>

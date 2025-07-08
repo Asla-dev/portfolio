@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil | Maslaw</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+
+    <script>
+       if ('serviceWorker' in navigator) {
+         navigator.serviceWorker.register('/sw.js', { 
+           scope: '/'  // Gère toutes les pages du site
+         });
+       }
+    </script>
+</head>
+<body>
+    <!-- Header et navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><img src="icons/icon-m.png" style="width: 30px;">  Mas<span>law</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html" style="color: #4cc9f0;">Accueil</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="messages.html">Messages</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"><img src="icons/icon-menu.png"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section héro -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <h1>Bonjour, je suis <span>Maslaw Garga Ibrahim</span></h1>
+            <p>Étudiant en Licence Informatique passionné par le développement web et la résolution de problèmes algorithmiques.</p>
+            <a href="projets.html" class="cta-btn">Voir mes projets</a>
+            <a href="contact.html" class="cta-btn secondary">Me contacter</a>
+            <button class="cta-btn" id="downloadButton">Mon CV<i class="telecharger"><img src="icons/icon-telecharger.png"></i></button>
+            <div id="statusMessage" class="status hidden"></div>
+        </div>
+        <a href="a-propos.html" class="scroll-down">
+            <i><img src="icons/icon-fleche-bas.png"></i>
+        </a>
+    </section>
+        
+    <!-- Footer --> 
+    <footer> 
+        <div class="container"> 
+            <div class="social-links"> 
+                <a href="https://www.facebook.com" class="social-link"><i class="social-icon"><img src="icons/icon-facebook.png"></i></a> 
+                <a href="https://www.linkedin.org" class="social-link"><i class="social-icon"><img src="icons/icon-linkedin.png"></i></a> 
+                <a href="https://www.twitter.com" class="social-link"><i class="social-icon"><img src="icons/icon-twitter.png"></i></a> 
+                <a href="https://www.telegramme.org" class="social-link"><i class="social-icon"><img src="icons/icon-telegram.png"></i></a> 
+            </div> 
+            <p class="footer-text">&copy; 2025 Maslaw Garag Ibrahim. Tous droits réservés.</p> 
+        </div> 
+    </footer> 
+    
+    <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>

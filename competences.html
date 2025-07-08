@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences | Maslaw</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+
+    <script>
+       if ('serviceWorker' in navigator) {
+         navigator.serviceWorker.register('/sw.js', { 
+           scope: '/'  // Gère toutes les pages du site
+         });
+       }
+    </script>
+</head>
+<body>
+    <!-- Header et navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><img src="icons/icon-m.png" style="width: 30px;">  Mas<span>law</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="competences.html" style="color: #4cc9f0;">Compétences</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"><img src="icons/icon-menu.png"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section compétences -->
+    <section id="competences" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Mes compétences</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <i class="fas fa-code"><img src="icons/icon-frontend.png"></i>
+                    <h3>Développement Front-end</h3>
+                    <p>Création d'interfaces utilisateur modernes et réactives avec les dernières technologies web.</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-server"><img src="icons/icon-backend.png"></i>
+                    <h3>Développement Back-end</h3>
+                    <p>Conception et implémentation de serveurs robustes et d'APIs performantes.</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"><img src="icons/icon-bd.png"></i>
+                    <h3>Bases de données</h3>
+                    <p>Conception et optimisation de bases de données relationnelles.</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"><img src="icons/icon-mobile.png"></i>
+                    <h3>Développement Mobile</h3>
+                    <p>Création d'applications mobiles cross-platform avec Android Studio.</p>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill-card"> 
+                    <i class="fas fa-project-diagram"><img src="icons/icon-ges.png"></i> 
+                    <h3>Gestion de Projet</h3> 
+                    <p>Méthodologies agiles, outils de versionning et planification de projets informatiques.</p> 
+                    <div class="skill-level"> 
+                        <div class="skill-progress" style="width: 65%;"></div> 
+                    </div> 
+                </div> 
+            </div> 
+        </div> 
+    </section> 
+
+    <!-- Section technologies --> 
+    <section class="section"> 
+        <div class="container"> 
+            <div class="section-title"> 
+                <h2>Technologies Maîtrisées</h2> 
+            </div> 
+            <div class="skills-container"> 
+                <div class="skill-card"> 
+                    <i class="fab fa-html5"><img src="icons/icon-html.png"></i> 
+                    <h3>HTML/CSS</h3> 
+                    <p>Structure et stylisation de sites web modernes et responsives.</p> 
+                    <div class="skill-level"> 
+                        <div class="skill-progress" style="width: 90%;">
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="skill-card">
+                    <i class="fab fa-js"><img src="icons/icon-js.png"></i> 
+                    <h3>JavaScript</h3>
+                    <p>Programmation front-end interactive et développement back-end avec Node.js.</p> 
+                    <div class="skill-level"> 
+                        <div class="skill-progress" style="width: 85%;">
+                        </div> 
+                    </div> 
+                </div>   
+                <div class="skill-card"> 
+                    <i class="fab fa-python"><img src="icons/icon-py.png"></i> 
+                    <h3>Python</h3> 
+                    <p>Analyse de données, scripts d'automatisation et apprentissage automatique.</p> 
+                    <div class="skill-level"> 
+                        <div class="skill-progress" style="width: 75%;"></div> 
+                    </div> 
+                </div> 
+                <div class="skill-card"> 
+                    <i class="fab fa-java"><img src="icons/icon-java.png"></i> 
+                    <h3>Java</h3>
+                    <p>Développement d'applications mobiles et programmation orientée objet.</p> 
+                    <div class="skill-level"> 
+                        <div class="skill-progress" style="width: 80%;">
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="skill-card"> 
+                    <i class="fas fa-database"><img src="icons/icon-sql.png"></i> 
+                    <h3>SQL</h3> 
+                    <p>Gestion de bases de données avec MySQL, PostgreSQL et MongoDB.</p> 
+                    <div class="skill-level"> 
+                        <div class="skill-progress" style="width: 85%;"></div> 
+                    </div> 
+                </div> 
+            </div> 
+        </section> 
+    
+
+    <!-- Footer --> 
+    <footer> 
+        <div class="container"> 
+            <div class="social-links"> 
+                <a href="https://www.facebook.com" class="social-link"><i class="social-icon"><img src="icons/icon-facebook.png"></i></a> 
+                <a href="https://www.linkedin.org" class="social-link"><i class="social-icon"><img src="icons/icon-linkedin.png"></i></a> 
+                <a href="https://www.twitter.com" class="social-link"><i class="social-icon"><img src="icons/icon-twitter.png"></i></a> 
+                <a href="https://www.telegramme.org" class="social-link"><i class="social-icon"><img src="icons/icon-telegram.png"></i></a> 
+            </div> 
+            <p class="footer-text">&copy; 2025 Maslaw Garag Ibrahim. Tous droits réservés.</p> 
+        </div> 
+    </footer> 
+    <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>

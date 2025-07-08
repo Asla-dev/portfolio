@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Maslaw</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#000000">
+
+    <script>
+       if ('serviceWorker' in navigator) {
+         navigator.serviceWorker.register('/sw.js', { 
+           scope: '/'  // Gère toutes les pages du site
+         });
+       }
+    </script>
+</head>
+<body>
+    <!-- Header et navigation -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo"><img src="icons/icon-m.png" style="width: 30px;">  Mas<span>law</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="competences.html">Compétences</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="contact.html" style="color: #4cc9f0;">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i><img src="icons/icon-menu.png"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Section contact --> 
+    <section id="contact" class="section contact"> 
+        <div class="container"> 
+            <div class="section-title"> 
+                <h2 id="title-contact">Contactez-moi</h2> 
+            </div> 
+            <div class="contact-container"> 
+                <div class="contact-info"> 
+                    <div class="contact-item"> 
+                        <i><img src="icons/icon-email.png"></i> 
+                        <div>
+                            <h3> Email</h3> 
+                            <p>imaslawgarga@email.com</p>
+                        </div>
+                    </div> 
+                    <div class="contact-item"> 
+                        <i><img src="icons/icon-telephone.png"></i> 
+                        <div> 
+                            <h3> Téléphone</h3> 
+                            <p>+237 6 56 26 00 34</p> 
+                        </div> 
+                    </div> 
+                    <div class="contact-item"> 
+                        <i><img src="icons/icon-localisation.png"></i> 
+                        <div> 
+                            <h3> Localisation</h3> 
+                            <p>Ngaoundéré, Cameroun</p> 
+                        </div> 
+                    </div> 
+                    <div class="contact-item"> 
+                        <i><img src="icons/icon-universite.png"></i> 
+                        <div> 
+                            <h3> Université</h3>
+                            <p>Université de Ngaoundéré</p> 
+                        </div> 
+                    </div>
+                </div> 
+            </div> 
+        </div> 
+        <form class="contact-form" id="contact-form" action="requete.php" method="post"> 
+            <div class="form-group"> 
+                <label for="name">Nom</label> 
+                <input type="text" id="name" name="nom" class="form-control" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-control" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="subject">Sujet</label> 
+                <input type="text" id="subject" name="sujet" class="form-control" required> 
+            </div> 
+            <div class="form-group"> 
+                <label for="message">Message</label> 
+                <textarea id="message" name="message" class="form-control" required></textarea> 
+            </div> 
+            <input type="submit" class=" submit-btn" value="Envoyer">
+        </form> 
+    </section> 
+
+
+    <!-- Footer --> 
+    <footer> 
+        <div class="container"> 
+            <div class="social-links"> 
+                <a href="https://www.facebook.com" class="social-link"><i class="social-icon"><img src="icons/icon-facebook.png"></i></a> 
+                <a href="https://www.linkedin.org" class="social-link"><i class="social-icon"><img src="icons/icon-linkedin.png"></i></a> 
+                <a href="https://www.twitter.com" class="social-link"><i class="social-icon"><img src="icons/icon-twitter.png"></i></a> 
+                <a href="https://www.telegramme.org" class="social-link"><i class="social-icon"><img src="icons/icon-telegram.png"></i></a> 
+            </div> 
+            <p class="footer-text">&copy; 2025 Maslaw Garag Ibrahim. Tous droits réservés.</p> 
+        </div> 
+    </footer> 
+    <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
