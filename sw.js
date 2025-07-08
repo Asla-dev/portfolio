@@ -13,6 +13,8 @@ const ASSETS = [
   'Tpe/index.html',
   'Tpe/style.css',
   'Tpe/script.js'
+  'icon-192.png',
+  'icon-512.png'
   // Ajoutez TOUTES les routes nécessaires
 ];
 
